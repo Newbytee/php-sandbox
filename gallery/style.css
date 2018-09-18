@@ -1,0 +1,14 @@
+/*:root {
+    --imgSize: 40%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slideshowImg {
+    width: var(--imgSize);
+    height: var(--imgSize);
+}*/
