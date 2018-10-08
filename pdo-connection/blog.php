@@ -8,12 +8,6 @@ $allowedOrder = $q->fetchAll(PDO::FETCH_COLUMN);
 $allowedSortBy = ["ASC", "DESC"];
 
 $addToStm = '';
-/*if (isset($_GET["sortBy"]) && gettype($_GET["sortBy"]) === "string") {
-    $addToStm = 'ORDER BY ' . $_GET["sortBy"];
-    if (isset($_GET["order"]) && gettype($_GET["order"]) === "string") {
-        $addToStm = $addToStm . ' ' . $_GET["order"];
-    }
-}*/
 
 if (isset($_GET["sortBy"]) && verifyInput($allowedOrder, $_GET["sortBy"])) {
     $addToStm = 'ORDER BY ' . $_GET["sortBy"];
