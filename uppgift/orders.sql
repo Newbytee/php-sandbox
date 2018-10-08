@@ -1,0 +1,18 @@
+USE c9;
+
+DROP TABLE IF EXISTS orders;
+
+CREATE TABLE orders(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    shipped BIT,
+    shipping_date TIMESTAMP,
+    PRIMARY KEY (id)
+) -- ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- LOCK TABLES orders WRITE;
+
+INSERT INTO orders VALUES(null, null, 1, '2017-02-28 10:00:00');
+--    (null, null, 0, "2019-05-28 10:00:00");
+
+-- UNLOCK TABLES;
